@@ -42,7 +42,7 @@
     if (self.immediateReturn) {
         
     } else {
-        UIBarButtonItem *doneButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(doneAction:)];
+        UIBarButtonItem *doneButtonItem = [[UIBarButtonItem alloc]  initWithTitle:@"确定" style::UIBarButtonSystemItemDone target:self action:@selector(doneAction:)];
         [self.navigationItem setRightBarButtonItem:doneButtonItem];
         [self.navigationItem setTitle:@"加载中..."];
     }
